@@ -17,7 +17,7 @@ function App(): JSX.Element {
                     alt="it's all good, man"
                 />
                 Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload and also Kevin B COS420 and Hello World
+                automatically reload and also Kevin B and Hello World
             </p>
             <ol>
                 <li>item 1</li>
@@ -32,8 +32,12 @@ function App(): JSX.Element {
             </Button>
             <Container>
                 <Row>
-                    <Col>I am a column</Col>
-                    <Col>Cool me too!</Col>
+                    <Col>
+                        <div style={{ border: "100px solid red" }}></div>
+                    </Col>
+                    <Col>
+                        <div style={{ border: "100px solid red" }}></div>
+                    </Col>
                 </Row>
             </Container>
         </div>
