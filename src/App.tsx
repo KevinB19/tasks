@@ -1,6 +1,12 @@
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import "./App.css";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
 
 function App(): JSX.Element {
     return (
@@ -8,38 +14,18 @@ function App(): JSX.Element {
             <header className="App-header">
                 UM COS420 with React Hooks and TypeScript
             </header>
-            <h1>
-                <span style={{ color: "red" }}>Hello World</span>
-            </h1>
-            <p>
-                <img
-                    src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdecider.com%2F2022%2F06%2F02%2Frevisiting-breaking-bad-after-better-call-saul%2F&psig=AOvVaw1Ns-JdR2_jHAJf4oZ7H80q&ust=1666382983885000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCOC0wMjO7_oCFQAAAAAdAAAAABAD"
-                    alt="it's all good, man"
-                />
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload and also Kevin B and Hello World
-            </p>
-            <ol>
-                <li>item 1</li>
-                <li>item 2</li>
-                <li>item 3</li>
-            </ol>
-            <Button
-                aria-label="Log Hello World"
-                onClick={() => console.log("Hello World!")}
-            >
-                Log Hello World
-            </Button>
-            <Container>
-                <Row>
-                    <Col>
-                        <div style={{ border: "100px solid red" }}></div>
-                    </Col>
-                    <Col>
-                        <div style={{ border: "100px solid red" }}></div>
-                    </Col>
-                </Row>
-            </Container>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
